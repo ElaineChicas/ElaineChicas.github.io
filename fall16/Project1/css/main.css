@@ -50,8 +50,8 @@ textarea {
    ========================================================================== */
    @font-face {
        font-family: 'source_sans_proregular';
-       src: url('..fonts/sanspro/sourcesanspro-regular-webfont.woff2') format('woff2'),
-            url('..fonts/sanspro/sourcesanspro-regular-webfont.woff') format('woff');
+       src: url('../sanspro/sourcesanspro-regular-webfont.woff2') format('woff2'),
+            url('../sanspro/sourcesanspro-regular-webfont.woff') format('woff');
        font-weight: normal;
        font-style: normal;
 
@@ -120,10 +120,10 @@ textarea {
    #photo01{
        width:100%;
        height:519px;
-       background-image: url("..Project1/images/water.png");
+       background-image: url("../images/water.png");
+       background-repeat: no-repeat;
        background-size: 100%;
-       position: absolute;
-       margin-top: 10px;
+       position: relative;
    }
    h1{
        padding-top: 5px;
@@ -155,7 +155,7 @@ textarea {
    }
    #box {
     opacity: 0.6;
-    filter: alpha(opacity=60)
+    filter: alpha(opacity=60);
     background-color: #8EB3B5;
     font-family: source_sans_proregular;
     font-size: 16px;
@@ -168,10 +168,9 @@ textarea {
 .floating-box {
   color: black;
     float: left;
-    width: 40%;
-    min-height: 250px;
+    width: 36%;
+    min-height:274px;
     margin: 30px 5%;
-    background-color: #80A2C1;
     margin-top: 70px;
 }
 /*--------start form----------*/
@@ -245,9 +244,10 @@ button{
 #photo02{
     width:100%;
     height:519px;
-    background-image: url("..Project1/images/view.jpg");
+    background-image: url("../images/view.jpg");
     background-size: 100%;
-    position: absolute;
+    background-repeat: no-repeat;
+    position: relative;
     margin-top: 10px;
 }
 #content03{
