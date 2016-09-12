@@ -82,7 +82,7 @@ textarea {
    #logo{
    	width: 37px;
    	height: 37px;
-   	background-image: url("..Project1/images/lightroom.png");
+   	background-image: url("../images/lightroom.png");
    	background-repeat: no-repeat;
    	background-size: 100%;
    	float: left;
