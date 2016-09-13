@@ -83,11 +83,12 @@ textarea {
        background: #E8D45B;
        transition-duration: 5s;
    }
-   p{
-     padding-left: 300px;
+   p {
+     text-align: center;
      color:#1A58A3;
      font-family: serif;
      font-size: 40px;
+     padding-top: 30px;
    }
    h2 {
      margin-top: 70px;
@@ -125,6 +126,9 @@ textarea {
     transform-origin: 50% 50%;
     transition: all 1.0s linear;
 }
+.card-container:hover .card {
+			transform: rotateY(180deg);
+		}
 .face {
     backface-visibility: hidden;
     height: 80%;
@@ -133,7 +137,7 @@ textarea {
     margin-left: 40px;
 }
     .face.back {
-        background: #999;
+        background: #D3AE44;
         font-size: 24px;
         height: 100%;
         transform: rotateY(180deg);
@@ -141,7 +145,74 @@ textarea {
         font-family: serif;
     }
 
+    .heart {
+        position: relative;
+        width: 100px;
+        height: 90px;
+        margin: 0 auto;
+    }
+    .heart:before,
+    .heart:after {
+        position: absolute;
+        content: "";
+        left: 50px;
+        top: 0;
+        width: 50px;
+        height: 80px;
+        background: red;
+        -moz-border-radius: 50px 50px 0 0;
+        border-radius: 50px 50px 0 0;
+        -webkit-transform: rotate(-45deg);
+           -moz-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+             -o-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+        -webkit-transform-origin: 0 100%;
+           -moz-transform-origin: 0 100%;
+            -ms-transform-origin: 0 100%;
+             -o-transform-origin: 0 100%;
+                transform-origin: 0 100%;
+    }
+    .heart:after {
+        left: 0;
+        -webkit-transform: rotate(45deg);
+           -moz-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+             -o-transform: rotate(45deg);
+                transform: rotate(45deg);
+        -webkit-transform-origin: 100% 100%;
+           -moz-transform-origin: 100% 100%;
+            -ms-transform-origin: 100% 100%;
+             -o-transform-origin: 100% 100%;
+                transform-origin :100% 100%;
+    }
+    .heart:hover:before,
+    .heart:hover:after {
+        background: #B554AE;
+        transition-duration: 5s;
+    }
+    h3 {
+      margin-top: 10px;
+       position: absolute;
+       width: 100%;
+       min-height:50px;
+       color: #fff;
+       font-family: serif;
+       font-size: 30px;
+       text-align: center;
+       z-index: 99;
 
+    }
+    .rectangle {
+        margin: 100px auto;
+        padding: 50px 25px;
+        background: #548DD1;
+        color: #333;
+        width: 300px;
+        min-height: 60px;
+        text-align: center;
+        transition: 1s ease-in-out;
+    }
 
 
 
