@@ -61,7 +61,7 @@ textarea {
     position: relative;
    }
 
-#triangle-left {
+.triangle-left {
 	width: 0;
 	height: 0;
 	border-top: 50px solid transparent;
@@ -70,15 +70,61 @@ textarea {
   background-repeat: repeat-x;
 
 }
-#triangle-right {
+.triangle-right {
 	width: 0;
 	height: 0;
 	border-top: 50px solid transparent;
 	border-left: 100px solid #5CC159;
 	border-bottom: 50px solid transparent;
+  background-repeat: repeat-x;
 }
-
-
+#rainbow1 {
+			animation-name: rainbow;
+			animation-duration: 10s;
+			animation-iteration-count: infinite;
+			-webkit-animation-name: rainbow;
+			-webkit-animation-duration: 10s;
+			-webkit-animation-iteration-count: infinite;
+		}
+    #rainbow2 {
+    			animation-name: rainbow;
+    			animation-duration: 10s;
+    			animation-iteration-count: infinite;
+    			-webkit-animation-name: rainbow;
+    			-webkit-animation-duration: 10s;
+    			-webkit-animation-iteration-count: infinite;
+    		}
+    @keyframes rainbow {
+    			0% {
+    				background: #000000;
+    			}
+    			11% {
+    				background: #ff0000;
+    			}
+    			22% {
+    				background: #ff9900;
+    			}
+    			33% {
+    				background: #ffff00;
+    			}
+    			44% {
+    				background: #00ff33;
+    			}
+    			55% {
+    				background: #00ffff;
+    			}
+    			66% {
+    				background: #0000ff;
+    			}
+    			77% {
+    				background: #ff00ff;
+    			}
+    			88% {
+    				background: #ffffff;
+    			}
+    			100% {
+    				background: #ffffff;
+    			}
 
 
 
