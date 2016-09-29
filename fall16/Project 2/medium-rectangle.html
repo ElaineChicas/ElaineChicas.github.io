@@ -36,7 +36,7 @@
 
             #upAndDown2 {
               position: absolute;
-              animation-name: upAndDown, RotateIn;
+              animation-name: upAndDown, rotateIn;
               animation-duration: 6s;
               animation-iteration-count: infinite;
               animation-fill-mode: both;
@@ -76,9 +76,9 @@
               #object01 {
                 position: absolute;
                 animation-name: fadeIn, fadeOut;
-                animation-duration: 4s;
+                animation-duration: 3s;
                 animation-fill-mode: both;
-                transform: scale(.71);
+                transform: scale(.72);
                 left: 20px;
                 top:-55px;
                 animation-delay: 3s;
@@ -86,12 +86,32 @@
               #object02 {
                 position: absolute;
                 animation-name: fadeIn;
-                animation-duration: 4s;
+                animation-duration: 3s;
                 animation-fill-mode: both;
-                transform: scale(.71);
+                transform: scale(.72);
                 left: 30px;
                 top:-55px;
-                animation-delay: 5s;
+                animation-delay: 4s;
+              }
+              #oval01 {
+                position: absolute;
+                animation-name: fadeIn;
+                animation-duration: 2s;
+                animation-fill-mode: both;
+                transform: scale(.07);
+                left: 34px;
+                top: -60px;
+                animation-delay: 5.7s;
+              }
+              #oval02 {
+                position: absolute;
+                animation-name: fadeIn;
+                animation-duration: 2s;
+                animation-fill-mode: both;
+                transform: scale(.07);
+                right: 30px;
+                top: -60px;
+                animation-delay: 5.7s;
               }
               @keyframes fadeIn {
                 from {
@@ -113,15 +133,14 @@
               }
               @keyframes rotateIn {
                 from {
-                  transform-origin: right top;
+                  transform-origin: top;
                   transform: rotate3d(0, 0, 1, -45deg);
-                  opacity: 0;
                 }
 
                 to {
-                  transform-origin: right bottom;
+                  transform-origin: bottom;
                   transform: none;
-                  opacity: 1;
+
                 }
         </style>
     </head>
@@ -136,10 +155,14 @@
             </div>
 
           <div id="still01" class="one">
-            <img id="object01" src="images/girl01.svg" alt=" girl holding cup"/>
+            <img id="object01" src="images/girl01.svg" alt="girl holding cup"/>
           </div>
           <div id="still02" class="one">
-            <img id="object02" src="images/girl02.svg" alt=" girl drinking cup"/>
+            <img id="object02" src="images/girl02.svg" alt="girl drinking cup"/>
+          </div>
+          <div id="ovals" class="two">
+            <img id="oval01" src="images/blush.svg" alt="pink oval"/>
+            <img id="oval02" src="images/blush.svg" alt="pink oval"/>
           </div>
 
             <!--markup for banner goes above-->
