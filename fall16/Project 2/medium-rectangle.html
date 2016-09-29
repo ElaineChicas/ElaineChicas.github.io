@@ -76,22 +76,22 @@
               #object01 {
                 position: absolute;
                 animation-name: fadeIn, fadeOut;
-                animation-duration: 3s;
-                animation-fill-mode: both;
+                animation-duration: 4s;
+                animation-fill-mode: backwards, forwards;
                 transform: scale(.72);
                 left: 20px;
                 top:-55px;
-                animation-delay: 3s;
+                animation-delay: 3s, 6s;
               }
               #object02 {
                 position: absolute;
-                animation-name: fadeIn;
+                animation-name: fadeIn, fadeOut;
                 animation-duration: 3s;
-                animation-fill-mode: both;
+                animation-fill-mode: backwards, forwards;
                 transform: scale(.72);
                 left: 30px;
                 top:-55px;
-                animation-delay: 4s;
+                animation-delay: 6.7s, 9s;
               }
               #oval01 {
                 position: absolute;
@@ -101,7 +101,7 @@
                 transform: scale(.07);
                 left: 34px;
                 top: -60px;
-                animation-delay: 5.7s;
+                animation-delay: 7s;
               }
               #oval02 {
                 position: absolute;
@@ -111,7 +111,7 @@
                 transform: scale(.07);
                 right: 30px;
                 top: -60px;
-                animation-delay: 5.7s;
+                animation-delay: 7s;
               }
               @keyframes fadeIn {
                 from {
@@ -119,12 +119,12 @@
                 }
 
                 to {
-                  opacity: 2;
+                  opacity: 1;
                 }
               }
               @keyframes fadeOut {
                 from {
-                  opacity: 2;
+                  opacity: 1;
                 }
 
                 to {
@@ -134,12 +134,12 @@
               @keyframes rotateIn {
                 from {
                   transform-origin: top;
-                  transform: rotate3d(0, 0, 1, -45deg);
+                  transform: scale(.2) rotate3d(0, 0, 1, -45deg);
                 }
 
                 to {
                   transform-origin: bottom;
-                  transform: none;
+                  transform: scale(.2) none;
 
                 }
         </style>
