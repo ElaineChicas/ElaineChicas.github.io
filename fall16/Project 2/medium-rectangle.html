@@ -57,8 +57,8 @@
 
             #upAndDown4 {
               position: absolute;
-              animation-name: upAndDown;
-              animation-duration: 6s;
+              animation-name: upAndDown, rotateIn;
+              animation-duration: 7s;
               animation-iteration-count: infinite;
               animation-fill-mode: both;
               transform: scale(.2);
@@ -81,7 +81,7 @@
                 transform: scale(.72);
                 left: 20px;
                 top:-55px;
-                animation-delay: 3s, 6s;
+                animation-delay: 3s, 5s;
               }
               #object02 {
                 position: absolute;
@@ -91,27 +91,27 @@
                 transform: scale(.72);
                 left: 30px;
                 top:-55px;
-                animation-delay: 6.7s, 9s;
+                animation-delay: 5.7s, 8s;
               }
               #oval01 {
                 position: absolute;
-                animation-name: fadeIn;
+                animation-name: fadeIn, fadeOut;
                 animation-duration: 2s;
-                animation-fill-mode: both;
+                animation-fill-mode: backwards, forwards;
                 transform: scale(.07);
                 left: 34px;
                 top: -60px;
-                animation-delay: 7s;
+                animation-delay: 6.9s, 7.7s;
               }
               #oval02 {
                 position: absolute;
-                animation-name: fadeIn;
+                animation-name: fadeIn, fadeOut;
                 animation-duration: 2s;
-                animation-fill-mode: both;
+                animation-fill-mode: backwards, forwards;
                 transform: scale(.07);
                 right: 30px;
                 top: -60px;
-                animation-delay: 7s;
+                animation-delay: 6.9s, 7.7s;
               }
               @keyframes fadeIn {
                 from {
