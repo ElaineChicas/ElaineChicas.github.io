@@ -31,7 +31,7 @@
               animation-fill-mode: both;
               transform: scale(.12);
               left: 100px;
-              animation-delay: 2s;
+              animation-delay: 0.3s;
             }
 
             #upAndDown2 {
@@ -42,7 +42,7 @@
               animation-fill-mode: both;
               transform: scale(.2);
               right: 100px;
-              animation-delay: 1s;
+              animation-delay: 0.1s;
             }
             #upAndDown3 {
               position: absolute;
@@ -52,18 +52,18 @@
               animation-fill-mode: both;
               transform: scale(.12);
               right: 100px;
-              animation-delay: 2.5s;
+              animation-delay: 0.8s;
             }
 
             #upAndDown4 {
               position: absolute;
               animation-name: upAndDown, rotateIn;
-              animation-duration: 7s;
+              animation-duration: 6.3s;
               animation-iteration-count: infinite;
               animation-fill-mode: both;
               transform: scale(.2);
               left: 90px;
-              animation-delay: 3s;
+              animation-delay: 0.8s;
             }
             @keyframes upAndDown {
                 0% {
@@ -81,7 +81,7 @@
                 transform: scale(.72);
                 left: 20px;
                 top:-55px;
-                animation-delay: 3s, 5s;
+                animation-delay: 2s, 4s;
               }
               #object02 {
                 position: absolute;
@@ -91,7 +91,7 @@
                 transform: scale(.72);
                 left: 30px;
                 top:-55px;
-                animation-delay: 5.7s, 8s;
+                animation-delay: 4.7s, 7s;
               }
               #oval01 {
                 position: absolute;
@@ -101,7 +101,7 @@
                 transform: scale(.07);
                 left: 34px;
                 top: -60px;
-                animation-delay: 6.9s, 7.7s;
+                animation-delay: 5.9s, 6.7s;
               }
               #oval02 {
                 position: absolute;
@@ -111,7 +111,27 @@
                 transform: scale(.07);
                 right: 30px;
                 top: -60px;
-                animation-delay: 6.9s, 7.7s;
+                animation-delay: 5.9s, 6.7s;
+              }
+              #slideInLeft {
+                position: absolute;
+                animation-name: slideInLeft;
+                animation-duration: 6s;
+                animation-fill-mode: both;
+                transform: scale(.9);
+                top: 35px;
+                animation-delay: 8s;
+              }
+
+              #object03 {
+                position: absolute;
+                animation-name: fadeIn, fadeOut;
+                animation-duration: 3.6s;
+                animation-fill-mode: backwards, forwards;
+                transform: scale(.8);
+                left: 5px;
+                top: 5px;
+                animation-delay: 8s, 9.6s;
               }
               @keyframes fadeIn {
                 from {
@@ -142,6 +162,14 @@
                   transform: scale(.2) none;
 
                 }
+              @slideInLeft {
+                from{
+                  transform: translate(-100px, 0);
+                }
+                to {
+                  transform: translate(100px, 0);
+                }
+              }
         </style>
     </head>
     <body>
@@ -163,6 +191,12 @@
           <div id="ovals" class="two">
             <img id="oval01" src="images/blush.svg" alt="pink oval"/>
             <img id="oval02" src="images/blush.svg" alt="pink oval"/>
+          </div>
+          <div id="side" class="one">
+            <img id="slideInLeft" src="images/wind01.svg" alt="wavy breeze"/>
+          </div>
+          <div id="still03" class="one">
+            <img id="object03" src="images/holdingcup.svg" alt="close up of cup"/>
           </div>
 
             <!--markup for banner goes above-->
