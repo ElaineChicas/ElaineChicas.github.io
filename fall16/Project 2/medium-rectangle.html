@@ -27,7 +27,7 @@
               position: absolute;
               animation-name: upAndDown;
               animation-duration: 6s;
-              animation-iteration-count: infinite;
+              animation-iteration-count: 2;
               animation-fill-mode: both;
               transform: scale(.12);
               left: 100px;
@@ -38,7 +38,7 @@
               position: absolute;
               animation-name: upAndDown, rotateIn;
               animation-duration: 6s;
-              animation-iteration-count: infinite;
+              animation-iteration-count: 2;
               animation-fill-mode: both;
               transform: scale(.2);
               right: 100px;
@@ -48,7 +48,7 @@
               position: absolute;
               animation-name: upAndDown;
               animation-duration: 6s;
-              animation-iteration-count: infinite;
+              animation-iteration-count: 2;
               animation-fill-mode: both;
               transform: scale(.12);
               right: 100px;
@@ -59,20 +59,12 @@
               position: absolute;
               animation-name: upAndDown, rotateIn;
               animation-duration: 6.3s;
-              animation-iteration-count: infinite;
+              animation-iteration-count: 2;
               animation-fill-mode: both;
               transform: scale(.2);
               left: 90px;
               animation-delay: 0.8s;
             }
-            @keyframes upAndDown {
-                0% {
-                  top: -250px;
-                }
-                100% {
-                  top: 250px;
-                }
-              }
               #object01 {
                 position: absolute;
                 animation-name: fadeIn, fadeOut;
@@ -113,14 +105,25 @@
                 top: -60px;
                 animation-delay: 5.9s, 6.7s;
               }
-              #slideInLeft {
+              #slideInLeft1 {
                 position: absolute;
                 animation-name: slideInLeft;
-                animation-duration: 6s;
+                animation-duration: 8s;
                 animation-fill-mode: both;
+                animation-iteration-count: 5;
                 transform: scale(.9);
-                top: 35px;
-                animation-delay: 8s;
+                top: 30px;
+                animation-delay: 7.5s;
+              }
+              #slideInLeft2 {
+                position: absolute;
+                animation-name: slideInLeft;
+                animation-duration: 8s;
+                animation-fill-mode: both;
+                animation-iteration-count: 5;
+                transform: scale(.3);
+                top: 160px;
+                animation-delay: 8.2s;
               }
 
               #object03 {
@@ -133,6 +136,14 @@
                 top: 5px;
                 animation-delay: 8s, 9.6s;
               }
+              @keyframes upAndDown {
+                  0% {
+                    top: -250px;
+                  }
+                  100% {
+                    top: 250px;
+                  }
+                }
               @keyframes fadeIn {
                 from {
                   opacity: 0;
@@ -162,12 +173,13 @@
                   transform: scale(.2) none;
 
                 }
+              }
               @keyframes slideInLeft {
                 from{
-                  transform: translate(-100px, 0);
+                  transform: translate(-330px, 0);
                 }
                 to {
-                  transform: translate(100px, 0);
+                  transform: translate(330px, 0);
                 }
               }
         </style>
@@ -193,7 +205,8 @@
             <img id="oval02" src="images/blush.svg" alt="pink oval"/>
           </div>
           <div id="side" class="one">
-            <img id="slideInLeft" src="images/wind01.svg" alt="wavy breeze"/>
+            <img id="slideInLeft1" src="images/wind01.svg" alt="wavy breeze"/>
+            <img id="slideInLeft2" src="images/wind01.svg" alt="wavy breeze"/>
           </div>
           <div id="still03" class="one">
             <img id="object03" src="images/holdingcup.svg" alt="close up of cup"/>
