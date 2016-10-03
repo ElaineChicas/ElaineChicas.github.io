@@ -105,26 +105,6 @@
                 top: -60px;
                 animation-delay: 5.9s, 6.7s;
               }
-              #slideInLeft1 {
-                position: absolute;
-                animation-name: slideInLeft;
-                animation-duration: 8s;
-                animation-fill-mode: both;
-                animation-iteration-count: 5;
-                transform: scale(.9);
-                top: 30px;
-                animation-delay: 7.5s;
-              }
-              #slideInLeft2 {
-                position: absolute;
-                animation-name: slideInLeft;
-                animation-duration: 8s;
-                animation-fill-mode: both;
-                animation-iteration-count: 5;
-                transform: scale(.3);
-                top: 160px;
-                animation-delay: 8.2s;
-              }
 
               #object03 {
                 position: absolute;
@@ -146,15 +126,46 @@
                 top:150px;
                 animation-delay: 9.9s, 12.2s;
               }
+              #slideInLeft1 {
+                position: absolute;
+                animation-name: slideInLeft;
+                animation-duration: 8s;
+                animation-fill-mode: both;
+                animation-iteration-count: 5;
+                transform: scale(.9);
+                top: 30px;
+                animation-delay: 7.5s;
+              }
+              #slideInLeft2 {
+                position: absolute;
+                animation-name: slideInLeft;
+                animation-duration: 8s;
+                animation-fill-mode: both;
+                animation-iteration-count: 5;
+                transform: scale(.3);
+                top: 160px;
+                animation-delay: 8.5s;
+              }
+
               #leftToRight1 {
                 position: absolute;
-                animation-name: leftToRight, rotateOutUpRight;
-                animation-duration: 6s;
+                animation-name: leftToRight;
+                animation-duration: 5s;
+                animation-iteration-count: 5;
+                animation-fill-mode: both;
+                transform: scale(.15);
+                top: -120px;
+                animation-delay: 8.5s;
+              }
+              #leftToRight2 {
+                position: absolute;
+                animation-name: leftToRight;
+                animation-duration: 5s;
                 animation-iteration-count: 4;
                 animation-fill-mode: both;
                 transform: scale(.2);
-                top: 20px;
-                animation-delay: 8.5s;
+                top: 70px;
+                animation-delay: 9s;
               }
               #object05 {
                 position: absolute;
@@ -171,7 +182,7 @@
                     top: -250px;
                   }
                   100% {
-                    top: 250px;
+                    top: 150px;
                   }
                 }
               @keyframes fadeIn {
@@ -214,25 +225,13 @@
               }
               @keyframes leftToRight {
                 from{
-                  transform: translate(-330px, 0);
+                  transform: scale(.2) translate(-1390px, 0);
                 }
                 to {
-                  transform: translate(330px, 0);
+                  transform: scale(.2) translate(1000px, 0);
                 }
               }
-              @keyframes rotateOutUpRight {
-                from {
-                  transform-origin: right bottom;
-                  transform: scale(.2) none;
-                  opacity: 1;
-                }
 
-                to {
-                  transform-origin: right bottom;
-                  transform: scale(.2) rotate3d(0, 0, 1, 90deg);
-                  opacity: 0;
-                }
-              }
         </style>
     </head>
     <body>
@@ -268,8 +267,6 @@
           <div id="side2" class="four">
             <img id="leftToRight1" src="images/snowflake.svg" alt="snow flake" />
             <img id="leftToRight2" src="images/snowflake.svg" alt="snow flake" />
-            <img id="leftToRight3" src="images/snowflake.svg" alt="snow flake" />
-            <img id="leftToRight4" src="images/snowflake.svg" alt="snow flake" />
           </div>
           <div id="still05" class="one">
             <img id="object05" src="images/girl03.svg" alt="girl placing cup on snow"/>
