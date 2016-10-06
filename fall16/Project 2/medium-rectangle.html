@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Banner Ad - Medium Rectangle (300x250)</title>
+        <meta name="ad.size" content="width=300,height=250">
+        <meta name="description" content="">
+
+        <style>
+            /*
+             * Banner container, do not change
+             */
+            #medium-rectangle {
+                background: #BFECF7;
+                border: 1px solid #ccc;
+                display: block;
+                height: 250px;
+                margin: 50px auto;
+                overflow: hidden;
+                padding: 0;
+                position: relative;
+                width: 300px;
+            }
+
+            #upAndDown1 {
+              position: absolute;
+              animation-name: upAndDown;
+              animation-duration: 6s;
+              animation-iteration-count: 1;
+              animation-fill-mode: both;
+              transform: scale(.12);
+              left: 100px;
+              animation-delay: 0.3s;
+            }
+
+            #upAndDown2 {
+              position: absolute;
+              animation-name: upAndDown, rotateIn;
+              animation-duration: 6s;
+              animation-iteration-count: 1;
+              animation-fill-mode: both;
+              transform: scale(.2);
+              right: 100px;
+              animation-delay: 0.1s;
+            }
+            #upAndDown3 {
+              position: absolute;
+              animation-name: upAndDown;
+              animation-duration: 6s;
+              animation-iteration-count: 1;
+              animation-fill-mode: both;
+              transform: scale(.12);
+              right: 100px;
+              animation-delay: 0.8s;
+            }
+
+            #upAndDown4 {
+              position: absolute;
+              animation-name: upAndDown, rotateIn;
+              animation-duration: 6.3s;
+              animation-iteration-count: 1;
+              animation-fill-mode: both;
+              transform: scale(.2);
+              left: 90px;
+              animation-delay: 0.8s;
+            }
+              #object01 {
+                position: absolute;
+                animation-name: fadeIn, fadeOut;
+                animation-duration: 1.5s;
+                animation-fill-mode: backwards, forwards;
+                transform: scale(.72);
+                left: 20px;
+                top:-55px;
+                animation-delay: 2s, 3.5s;
+              }
+              #object02 {
+                position: absolute;
+                animation-name: fadeIn, fadeOut;
+                animation-duration: 2.2s;
+                animation-fill-mode: backwards, forwards;
+                transform: scale(.72);
+                left: 30px;
+                top:-55px;
+                animation-delay: 3.8s, 5.8s;
+              }
+              #oval01 {
+                position: absolute;
+                animation-name: fadeIn, fadeOut;
+                animation-duration: 1.1s;
+                animation-fill-mode: backwards, forwards;
+                transform: scale(.07);
+                left: 34px;
+                top: -60px;
+                animation-delay: 4.7s, 5.8s;
+              }
+              #oval02 {
+                position: absolute;
+                animation-name: fadeIn, fadeOut;
+                animation-duration: 1.1s;
+                animation-fill-mode: backwards, forwards;
+                transform: scale(.07);
+                right: 30px;
+                top: -60px;
+                animation-delay: 4.7s, 5.8s;
+              }
+              #leftToRight1 {
+                position: absolute;
+                animation-name: leftToRight;
+                animation-duration: 5s;
+                animation-iteration-count: 2;
+                animation-fill-mode: both;
+                transform: scale(.15);
+                top: -120px;
+                animation-delay: 8s;
+              }
+              #leftToRight2 {
+                position: absolute;
+                animation-name: leftToRight;
+                animation-duration: 5s;
+                animation-iteration-count: 2;
+                animation-fill-mode: both;
+                transform: scale(.2);
+                top: 70px;
+                animation-delay: 8.5s;
+              }
+              #leftToRight3 {
+                position: absolute;
+                animation-name: leftToRight;
+                animation-duration: 5s;
+                animation-iteration-count: 2;
+                animation-fill-mode: both;
+                transform: scale(.2);
+                top: -20px;
+                animation-delay: 9s;
+              }
+              #object03 {
+                position: absolute;
+                animation-name: fadeIn, fadeOut;
+                animation-duration: 1.5s;
+                animation-fill-mode: backwards, forwards;
+                transform: scale(.8);
+                left: 5px;
+                top: 5px;
+                animation-delay: 6s, 7.5s;
+              }
+              #object04 {
+                position: absolute;
+                animation-name: fadeIn, fadeOut;
+                animation-duration:1.8s;
+                animation-fill-mode: backwards, forwards;
+                transform: scale(1.0);
+                left: 0px;
+                top:150px;
+                animation-delay: 7.9s, 15s;
+              }
+              #slideInLeft1 {
+                position: absolute;
+                animation-name: slideInLeft;
+                animation-duration: 8s;
+                animation-fill-mode: both;
+                animation-iteration-count: 1;
+                transform: scale(.9);
+                top: 30px;
+                animation-delay: 6.5s;
+              }
+              #slideInLeft2 {
+                position: absolute;
+                animation-name: slideInLeft;
+                animation-duration: 8s;
+                animation-fill-mode: both;
+                animation-iteration-count: 1;
+                transform: scale(.3);
+                top: 160px;
+                animation-delay: 7.5s;
+              }
+              #object05 {
+                position: absolute;
+                animation-name: fadeIn, fadeOut;
+                animation-duration: 2s;
+                animation-fill-mode: backwards, forwards;
+                transform: scale(.9);
+                right: -50px;
+                top:-15px;
+                animation-delay: 8s, 10s;
+              }
+              #object06 {
+                position: absolute;
+                animation-name: fadeIn, fadeOut;
+                animation-duration: 4.5s;
+                animation-fill-mode: backwards, forwards;
+                transform: scale(.9);
+                left: 20px;
+                top:80px;
+                animation-delay: 10.5s, 14s;
+              }
+              #object07 {
+                position: absolute;
+                animation-name: fadeIn, fadeOut;
+                animation-duration: 3s;
+                animation-fill-mode: backwards, forwards;
+                transform: scale(.9);
+                left: 20px;
+                top:5px;
+                animation-delay: 11s, 15s;
+              }
+              #object08 {
+                position: absolute;
+                animation-name: fadeIn, fadeOut;
+                animation-duration: 2.3s;
+                animation-fill-mode: backwards, forwards;
+                transform: scale(1.2);
+                right: 20px;
+                top: 200px;
+                animation-delay: 12s, 15s;
+              }
+              @keyframes upAndDown {
+                  0% {
+                    top: -250px;
+                  }
+                  100% {
+                    top: 150px;
+                  }
+                }
+                @keyframes leftToRight {
+                  from{
+                    transform: scale(.15) translate(-1500px, 0);
+                  }
+                  to {
+                    transform: scale(.15) translate(1500px, 0);
+                  }
+                }
+              @keyframes fadeIn {
+                from {
+                  opacity: 0;
+                }
+
+                to {
+                  opacity: 1;
+                }
+              }
+              @keyframes fadeOut {
+                from {
+                  opacity: 1;
+                }
+
+                to {
+                  opacity: 0;
+                }
+              }
+              @keyframes rotateIn {
+                from {
+                  transform-origin: top;
+                  transform: scale(.18) rotate3d(0, 0, 1, -45deg);
+                }
+
+                to {
+                  transform-origin: bottom;
+                  transform: scale(.18) none;
+
+                }
+              }
+              @keyframes slideInLeft {
+                from{
+                  transform: scale(.6) translate(-400px, 0);
+                }
+                to {
+                  transform: scale(.6) translate(400px, 0);
+                }
+              }
+        </style>
+    </head>
+    <body>
+        <a href="#" id="medium-rectangle">
+            <!--markup for banner goes below-->
+            <div id="axis" class="four">
+              <img id="upAndDown1" src="images/snowflake.svg" alt="snow flake" />
+              <img id="upAndDown2" src="images/snowflake.svg" alt="snow flake" />
+              <img id="upAndDown3" src="images/snowflake.svg" alt="snow flake" />
+              <img id="upAndDown4" src="images/snowflake.svg" alt="snow flake" />
+            </div>
+
+          <div id="still01" class="one">
+            <img id="object01" src="images/girl01.svg" alt="girl holding cup"/>
+          </div>
+          <div id="still02" class="one">
+            <img id="object02" src="images/girl02.svg" alt="girl drinking cup"/>
+          </div>
+          <div id="ovals" class="two">
+            <img id="oval01" src="images/blush.svg" alt="pink oval"/>
+            <img id="oval02" src="images/blush.svg" alt="pink oval"/>
+          </div>
+          <div id="side2" class="three">
+            <img id="leftToRight1" src="images/snowflake.svg" alt="snow flake" />
+            <img id="leftToRight2" src="images/snowflake.svg" alt="snow flake" />
+            <img id="leftToRight3" src="images/snowflake.svg" alt="snow flake" />
+          </div>
+          <div id="still04" class="one">
+            <img id="object04" src="images/snow.svg" alt="snow ground"/>
+          </div>
+          <div id="side" class="one">
+            <img id="slideInLeft1" src="images/wind01.svg" alt="wavy breeze"/>
+            <img id="slideInLeft2" src="images/wind01.svg" alt="wavy breeze"/>
+          </div>
+          <div id="still03" class="one">
+            <img id="object03" src="images/holdingcup.svg" alt="close up of cup"/>
+          </div>
+          <div id="still05" class="one">
+            <img id="object05" src="images/girl03.png" alt="girl placing cup on snow"/>
+          </div>
+          <div id="still06" class="one">
+            <img id="object06" src="images/cup.png" alt="cup sitting on snow"/>
+          </div>
+          <div id="still07" class="two">
+            <img id="object07" src="images/text01.png" alt="welcome text"/>
+          </div>
+          <div id="still08" class="two">
+            <img id="object08" src="images/text02.png" alt="sign up text"/>
+          </div>
+            <!--markup for banner goes above-->
+        </div>
+    </body>
+</html>
