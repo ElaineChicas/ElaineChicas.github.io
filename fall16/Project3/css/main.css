@@ -1,8 +1,8 @@
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
 
 *, *:before, *:after {
-    -webkit-box-sizing: border-box; 
-    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -283,7 +283,7 @@ textarea {
 .offset-xs-11 {
   margin-left: 91.666667%;
 }
-/* breakpoint @ 544px */ 
+/* breakpoint @ 544px */
 @media (min-width: 34em) {
   .col-sm-1 {
     float: left;
@@ -448,7 +448,7 @@ textarea {
     margin-left: 91.666667%;
   }
 }
-/* breakpoint @ 768px */ 
+/* breakpoint @ 768px */
 @media (min-width: 48em) {
   .col-md-1 {
     float: left;
@@ -947,17 +947,155 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+   #wrapper{
+   	max-width:1280px;
+   	margin: 0 auto;
+   	padding-top: 30px;
+       position: relative;
+   }
+   body{
+       background-color: #BFECF7;
+   }
+   nav{
+       background-color: #289E5D;
+       height: 62px;
+       margin: 25px auto 0;
+       width: 70%;
+       margin-left: 190px;
+   }
 
+   nav ul{
+       list-style-type: none;
+       width:800px;
+       height:48px;
+       margin:0 auto;
 
+   }
 
+   li {
+       float: left;
+       border-style: none;
+   }
+   li a {
+       display: block;
+       color: #FFFFFF;
+       text-align: center;
+       padding: 13px 38.13px;
+       text-decoration: none;
+       font-family: Optima;
+       font-size: 25px;
+   }
+   li a:hover {
+       background-color: #167042;
+       color:#FFFFFF;
+   }
+   li a.active {
+       background-color: #167042;
+       color: #FFFFFF;
+   }
+   h1{
+     padding-top: 20px;
+     font-family: Great Vibes;
+     font-size: 58px;
+     color: #FFFFFF;
+     padding-left: 35px;
+   }
+   #heading1{
+       height: 118.622px;
+       width: 346.227px;
+       background-color: #C60920;
+       margin-left: 70px;
+   }
+   p{
+     font-family: Optima;
+     font-size: 1.125em;
+     color: #000000;
+   }
+   @media (min-width: 768px) {
+     p{
+       font-size: 1.375em;
+     }
+   }
+   #body1{
+       height: 272.067px;
+       width: 1132.962px;
+       background-color: #A8E0FC;
+       line-height: 1.5;
+       margin-left: 70px;
+   }
+   button{
+       color: #FFFFFF;
+       background-color: #C60920;
+       width:286px;
+       height:57px;
+       border-style: none;
+       float:left;
+       font-size: 17px;
+       font-family: Optima;
+       margin-top: 30px;
+       border-radius: 10px;
+       margin-left: 520px;
+       padding-top: 5px;
+   }
+   #logo{
+   	width: 80px;
+   	height: 80px;
+   	background-image: url("../images/starbucks.png");
+   	background-repeat: no-repeat;
+   	background-size: 100%;
+   	float: left;
+   	margin: 0 0 10px 10px;
+    margin-left: 70px;
+    margin-top: -10px;
+   }
+   #image1{
+   	width: 330px;
+   	height: 220px;
+   	background-image: url("../images/lights1.jpg");
+   	background-repeat: no-repeat;
+   	background-size: 100%;
+   	float: left;
+   	margin: 0 0 10px 10px;
+    margin-left: 70px;
+    margin-top: 30px;
+   }
+   #image2{
+   	width: 330px;
+   	height: 220px;
+   	background-image: url("../images/lights1.jpg");
+   	background-repeat: no-repeat;
+   	background-size: 100%;
+   	float: left;
+   	margin: 0 0 10px 10px;
+    margin-left: 70px;
+    margin-top: 30px;
+   }
+   #image3{
+   	width: 330px;
+   	height: 220px;
+   	background-image: url("../images/lights1.jpg");
+   	background-repeat: no-repeat;
+   	background-size: 100%;
+   	float: left;
+   	margin: 0 0 10px 10px;
+    margin-left: 70px;
+    margin-top: 30px;
+   }
+   footer{
+       height:40px;
+       width:1280px;
+       padding-top: 20px;
+       font-family: Optima;
+       font-size: 14px;
+       color: #51B4E5;
+       padding-left: 70px;
+   }
 
-
-
-
-
-
-
-
+   .confirmation-msg {
+     background-color: #A8E0FC;
+     line-height: 1.5;
+     padding: 3em;
+   }
 
 
 
