@@ -951,23 +951,22 @@ textarea {
    	max-width:1280px;
    	margin: 0 auto;
    	padding-top: 30px;
-       position: relative;
+    position: relative;
    }
    body{
        background-color: #BFECF7;
    }
    nav{
        background-color: #289E5D;
-       height: 62px;
-       margin: 25px auto 0;
-       width: 70%;
+       min-height: 30px;
+       width: 52.3%;
        margin-left: 190px;
    }
 
    nav ul{
        list-style-type: none;
        width:800px;
-       height:48px;
+       height:45px;
        margin:0 auto;
 
    }
@@ -983,7 +982,7 @@ textarea {
        padding: 13px 38.13px;
        text-decoration: none;
        font-family: Optima;
-       font-size: 25px;
+       font-size: 14px;
    }
    li a:hover {
        background-color: #167042;
@@ -996,38 +995,40 @@ textarea {
    h1{
      padding-top: 20px;
      font-family: Great Vibes;
-     font-size: 58px;
+     font-size: 50px;
      color: #FFFFFF;
      padding-left: 35px;
    }
+   footer{
+     width: 100%;
+     min-height: 35px;
+     background-color: #51B4E5;
+     color: white;
+     padding-top: 10px;
+     padding-left: 20px;
+     font-size: 14px;
+
+   }
+  /*--------start submit----------*/
    #heading1{
-       height: 118.622px;
-       width: 346.227px;
+       height: 105px;
+       width: 335px;
        background-color: #C60920;
-       margin-left: 70px;
+       float: left;
+       margin-top: 20px;
    }
-   p{
-     font-family: Optima;
-     font-size: 1.125em;
-     color: #000000;
+
+     @media (min-width: 1280px) {
+       #heading1{
+         float: left;
+       }
    }
-   @media (min-width: 768px) {
-     p{
-       font-size: 1.375em;
-     }
-   }
-   #body1{
-       height: 272.067px;
-       width: 1132.962px;
-       background-color: #A8E0FC;
-       line-height: 1.5;
-       margin-left: 70px;
-   }
+
    button{
        color: #FFFFFF;
        background-color: #C60920;
-       width:286px;
-       height:57px;
+       width:20%;
+       min-height:60px;
        border-style: none;
        float:left;
        font-size: 17px;
@@ -1036,10 +1037,16 @@ textarea {
        border-radius: 10px;
        margin-left: 520px;
        padding-top: 5px;
+       margin-bottom: 20px;
    }
+   @media (max-width: 1280px) {
+     button{
+      min-width: 20%;
+      min-height: 57px;
+     }
    #logo{
-   	width: 80px;
-   	height: 80px;
+   	width: 60px;
+   	height: 60px;
    	background-image: url("../images/starbucks.png");
    	background-repeat: no-repeat;
    	background-size: 100%;
@@ -1049,55 +1056,92 @@ textarea {
     margin-top: -10px;
    }
    #image1{
-   	width: 330px;
-   	height: 220px;
-   	background-image: url("../images/lights1.jpg");
-   	background-repeat: no-repeat;
-   	background-size: 100%;
-   	float: left;
-   	margin: 0 0 10px 10px;
-    margin-left: 70px;
     margin-top: 30px;
    }
+   @media (max-width: 1280px) {
+     #image1{
+      max-width: 300px;
+     }
    #image2{
-   	width: 330px;
-   	height: 220px;
-   	background-image: url("../images/lights1.jpg");
-   	background-repeat: no-repeat;
-   	background-size: 100%;
-   	float: left;
-   	margin: 0 0 10px 10px;
-    margin-left: 70px;
     margin-top: 30px;
    }
    #image3{
-   	width: 330px;
-   	height: 220px;
-   	background-image: url("../images/lights1.jpg");
-   	background-repeat: no-repeat;
-   	background-size: 100%;
-   	float: left;
-   	margin: 0 0 10px 10px;
-    margin-left: 70px;
     margin-top: 30px;
    }
-   footer{
-       height:40px;
-       width:1280px;
-       padding-top: 20px;
-       font-family: Optima;
-       font-size: 14px;
-       color: #51B4E5;
-       padding-left: 70px;
-   }
-
    .confirmation-msg {
      background-color: #A8E0FC;
      line-height: 1.5;
      padding: 3em;
+     font-size: 14px;
+     margin-top: 20px;
+   }
+  /*--------end submit----------*/
+
+   /*--------start form----------*/
+   #heading2{
+       min-height: 40px;
+       width: 45%;
+       background-color: #C60920;
+       margin-left: 70px;
    }
 
+   .registration-msg {
+     line-height: 1.5;
+     color: white;
+     font-family: Optima;
+     font-size: 14px;
+   }
+   form{
+   	width:830px;
+     margin: 0 auto;
+   	background-color: #A8E0FC;
+   	padding-top: 20px;
+   }
+   label{
+     font-family: source_sans_proregular;
+   }
+   .leftform{
+       width:260px;
+       min-height:250px;
+       border-style: none;
+       float:left;
+       padding:20px;
+       font-size: 14px;
+       margin-left: 30px;
+       font-family: Optima;
+   }
 
+   .rightform{
+       width:385px;
+       min-height:250px;
+       border-style: none;
+       float:left;
+       padding:20px;
+       font-size: 14px;
+       margin-left: 5px;
+       font-family: Optima;
+   }
+   #name, #last, #email, #birthday{
+       width:190px;
+       height: 20px;
+       color: black;
+       font-family: Optima;
+       border-style: none;
+       margin: 4px 0;
+   }
+   .checkboxes{
+       width:430px;
+       height:100px;
+       border-style: none;
+       margin-left: 0px;
+       font-size: 14px;
+       padding-top: 10px;
+       line-height: 35px;
+     }
+   input type{
+       background-color: #C5DFEF;
+   }
+   /*--------end form----------*/
 
 
 /* ==========================================================================
