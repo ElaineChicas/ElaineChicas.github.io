@@ -947,6 +947,14 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+   @font-face {
+       font-family: 'great_vibesregular';
+       src: url('../fonts/greatvibes/greatvibes-regular-webfont.woff2') format('woff2'),
+            url('../fonts/greatvibes/greatvibes-regular-webfont.woff') format('woff');
+       font-weight: normal;
+       font-style: normal;
+
+   }
    #wrapper{
    	max-width:1280px;
    	margin: 0 auto;
@@ -956,30 +964,33 @@ textarea {
    body{
        background-color: #BFECF7;
    }
-   nav{
-       background-color: #289E5D;
+
+   nav {
        min-height: 30px;
-       width: 52.3%;
-       margin-left: 190px;
+       padding: 0 15px;
    }
-
+   @media screen and (max-width: 767px) {
+     nav {
+       clear: both;
+     }
+   }
    nav ul{
+      background-color: #289E5D;
        list-style-type: none;
-       width:800px;
-       height:45px;
-       margin:0 auto;
+       overflow: hidden;
+       padding-left: 0;
+      max-width: 350px;
 
    }
 
-   li {
+   nav li {
        float: left;
-       border-style: none;
    }
    li a {
        display: block;
        color: #FFFFFF;
        text-align: center;
-       padding: 13px 38.13px;
+       padding: 13px 24px;
        text-decoration: none;
        font-family: Optima;
        font-size: 14px;
@@ -993,14 +1004,14 @@ textarea {
        color: #FFFFFF;
    }
    h1{
-     padding-top: 20px;
-     font-family: Great Vibes;
-     font-size: 50px;
+     font-family: great_vibesregular;
+     font-size: 40px;
      color: #FFFFFF;
-     padding-left: 35px;
+     text-align: center;
+     margin: .25em 0;
    }
    footer{
-     width: 100%;
+     max-width: 100%;
      min-height: 35px;
      background-color: #51B4E5;
      color: white;
@@ -1011,39 +1022,24 @@ textarea {
    }
   /*--------start submit----------*/
    #heading1{
-       height: 105px;
-       width: 335px;
+       width: 310px;
        background-color: #C60920;
        float: left;
        margin-top: 20px;
    }
 
-     @media (min-width: 1280px) {
-       #heading1{
-         float: left;
-       }
-   }
 
-   button{
+   button {
        color: #FFFFFF;
        background-color: #C60920;
-       width:20%;
-       min-height:60px;
        border-style: none;
-       float:left;
        font-size: 17px;
        font-family: Optima;
        margin-top: 30px;
        border-radius: 10px;
-       margin-left: 520px;
-       padding-top: 5px;
+       padding: 5px 10px;
        margin-bottom: 20px;
    }
-   @media (max-width: 1280px) {
-     button{
-      min-width: 20%;
-      min-height: 57px;
-     }
    #logo{
    	width: 60px;
    	height: 60px;
@@ -1051,29 +1047,23 @@ textarea {
    	background-repeat: no-repeat;
    	background-size: 100%;
    	float: left;
-   	margin: 0 0 10px 10px;
-    margin-left: 70px;
-    margin-top: -10px;
+   	margin: 0px 20px 10px 50px;
    }
-   #image1{
-    margin-top: 30px;
-   }
-   @media (max-width: 1280px) {
-     #image1{
-      max-width: 300px;
+   @media screen and (min-width: 768px) {
+     #logo{
+     	width: 75px;
+     	height: 75px;
+     	margin: -10px 20px 10px 20px;
      }
-   #image2{
-    margin-top: 30px;
    }
-   #image3{
-    margin-top: 30px;
-   }
+   
    .confirmation-msg {
      background-color: #A8E0FC;
      line-height: 1.5;
      padding: 3em;
      font-size: 14px;
      margin-top: 20px;
+     margin-bottom: 20px;
    }
   /*--------end submit----------*/
 
@@ -1097,9 +1087,7 @@ textarea {
    	background-color: #A8E0FC;
    	padding-top: 20px;
    }
-   label{
-     font-family: source_sans_proregular;
-   }
+
    .leftform{
        width:260px;
        min-height:250px;
