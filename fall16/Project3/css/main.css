@@ -975,10 +975,9 @@ textarea {
      }
    }
    nav ul{
-      background-color: #289E5D;
-       list-style-type: none;
-       overflow: hidden;
-       padding-left: 0;
+      list-style-type: none;
+      overflow: hidden;
+      padding-left: 0;
       max-width: 350px;
 
    }
@@ -986,7 +985,8 @@ textarea {
    nav li {
        float: left;
    }
-   li a {
+   nav a {
+        background-color: #289E5D;
        display: block;
        color: #FFFFFF;
        text-align: center;
@@ -995,11 +995,11 @@ textarea {
        font-family: Optima;
        font-size: 14px;
    }
-   li a:hover {
+   nav a:hover {
        background-color: #167042;
        color:#FFFFFF;
    }
-   li a.active {
+   nav a.active {
        background-color: #167042;
        color: #FFFFFF;
    }
@@ -1031,8 +1031,8 @@ textarea {
    #heading1{
        width: 310px;
        background-color: #C60920;
-       float: left;
        margin-top: 20px;
+       padding: 5px 5px;
    }
 
 
@@ -1047,6 +1047,7 @@ textarea {
        padding: 5px 10px;
    }
    #logo{
+    display: block;
    	width: 60px;
    	height: 60px;
    	background-image: url("../images/starbucks.png");
@@ -1071,6 +1072,11 @@ textarea {
      margin-top: 20px;
      margin-bottom: 20px;
    }
+  .multi_bg {
+  background-image: url("../images/snowflake.svg");
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: bottom right, left, right;
+  }
   /*--------end submit----------*/
 
    /*--------start form----------*/
@@ -1082,7 +1088,7 @@ textarea {
      font-weight: normal;
      font-family: Optima;
    }
-   @media screen and (max-width: 1280px) {
+   @media screen and (min-width: 768px) {
      h2 {
        text-align: center;
      }
