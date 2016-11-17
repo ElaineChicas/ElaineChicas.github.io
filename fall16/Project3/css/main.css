@@ -1011,6 +1011,11 @@ textarea {
      margin: .40em 0;
 
    }
+   p{
+     font-family: Optima;
+     font-size: 14px;
+     line-height: 130%;
+   }
    footer{
      max-width: 100%;
      min-height: 35px;
