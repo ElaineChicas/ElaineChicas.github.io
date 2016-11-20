@@ -947,6 +947,8 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+   /*--------start (applies to all pages)-------*/
    @font-face {
        font-family: 'great_vibesregular';
        src: url('../fonts/greatvibes/greatvibes-regular-webfont.woff2') format('woff2'),
@@ -964,7 +966,23 @@ textarea {
    body{
        background-color: #BFECF7;
    }
-
+   #logo{
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-image: url("../images/starbucks.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    float: left;
+    margin: 0px 20px 10px 30px;
+   }
+   @media screen and (min-width: 768px) {
+     #logo{
+     	width: 75px;
+     	height: 75px;
+     	margin: -10px 20px 10px 20px;
+     }
+   }
    nav {
        min-height: 30px;
        padding: 0;
@@ -981,7 +999,6 @@ textarea {
       max-width: 350px;
 
    }
-
    nav li {
        float: left;
    }
@@ -1003,18 +1020,19 @@ textarea {
        background-color: #167042;
        color: #FFFFFF;
    }
-   h1{
-     font-family: great_vibesregular;
-     font-size: 40px;
-     color: #FFFFFF;
-     text-align: center;
-     margin: .40em 0;
-
+   #heading2{
+       max-width: 310px;
+       background-color: #C60920;
+       float: left;
+       margin-top: 20px;
+       padding: 0 40px;
+       margin-bottom: 20px;
    }
-   p{
+   .registration-msg p{
      font-family: Optima;
      font-size: 14px;
-     line-height: 130%;
+     line-height: 150%;
+     margin-top: -10px;
    }
    footer{
      max-width: 100%;
@@ -1025,59 +1043,26 @@ textarea {
      padding-left: 20px;
      font-size: 14px;
      margin-top: 20px;
+   }
+  /*--------end (applies to all pages)-------*/
 
-   }
-  /*--------start submit----------*/
-   #heading1{
-       width: 310px;
-       background-color: #C60920;
-       margin-top: 20px;
-       padding: 5px 5px;
-   }
-
-
-   button, .button {
-       color: #FFFFFF;
-       background-color: #C60920;
-       border-style: none;
-       font-size: 17px;
-       font-family: Optima;
-       margin-top: 30px;
-       border-radius: 10px;
-       padding: 5px 10px;
-   }
-   #logo{
-    display: block;
-   	width: 60px;
-   	height: 60px;
-   	background-image: url("../images/starbucks.png");
-   	background-repeat: no-repeat;
-   	background-size: 100%;
-   	float: left;
-   	margin: 0px 20px 10px 30px;
-   }
-   @media screen and (min-width: 768px) {
-     #logo{
-     	width: 75px;
-     	height: 75px;
-     	margin: -10px 20px 10px 20px;
-     }
-   }
-
-   .confirmation-msg {
-     background-color: #A8E0FC;
-     line-height: 1.5;
-     padding: 3em;
-     font-size: 14px;
-     margin-top: 20px;
-     margin-bottom: 20px;
-   }
-  .multi_bg {
-  background-image: url("../images/snowflake.svg");
-  background-repeat: no-repeat, no-repeat, no-repeat;
-  background-position: bottom right, left, right;
+  /*--------start index----------*/
+  #breeze-overlay{
+    min-width:240px;
+    min-height: 510px;
+    background-image: url("../images/breeze.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
   }
-  /*--------end submit----------*/
+  h3{
+    margin-top: 47px;
+    color: #03323A;
+    font-weight: normal;
+    font-size: 14px;
+    margin-left: 35px;
+    font-family: Optima;
+  }
 
    /*--------start form----------*/
    h2{
@@ -1087,21 +1072,13 @@ textarea {
      font-size: 14px;
      font-weight: normal;
      font-family: Optima;
+     line-height: 180%;
    }
    @media screen and (min-width: 768px) {
      h2 {
        text-align: center;
      }
    }
-   #heading2{
-       max-width: 310px;
-       background-color: #C60920;
-       float: left;
-       margin-top: 20px;
-       padding: 0 40px;
-       margin-bottom: 20px;
-   }
-
    .registration-msg {
      line-height: 1.5;
      color: white;
@@ -1111,21 +1088,18 @@ textarea {
    form{
     margin: 0 auto;
    	background-color: #A8E0FC;
-   	padding-top: 20px;
+   	padding-top: 30px;
     margin-top: 20px;
     margin-bottom: 20px;
+    padding-bottom: 30px;
    }
-
    .leftform{
        border-style: none;
-       padding:20px;
        font-size: 14px;
        font-family: Optima;
    }
-
    .rightform{
        border-style: none;
-       padding:20px;
        font-size: 14px;
        font-family: Optima;
    }
@@ -1143,16 +1117,31 @@ textarea {
        margin: 10px 20px;
    }
    .checkboxes{
+     max-width: 370px;
        border-style: none;
        margin-left: 0px;
        font-size: 14px;
-       padding-top: 10px;
-       line-height: 35px;
+     }
+    p{
+       line-height: 180%;
+       font-size: 14px;
      }
    input type{
        background-color: #C5DFEF;
    }
+   button{
+       color: #FFFFFF;
+       background-color: #C60920;
+       border-style: none;
+       font-size: 17px;
+       font-family: Optima;
+       margin-top: 30px;
+       border-radius: 10px;
+   }
+
    /*--------end form----------*/
+
+   /*--------start map----------*/
 
 /* */
 /* Responsive iframe for all types of media use 'iframe-responsive' */
@@ -1169,7 +1158,58 @@ textarea {
 	top: 0;
 	width: 100% !important;
 }
+/*--------end map----------*/
 
+/*--------start submit----------*/
+ #heading1{
+     width: 310px;
+     background-color: #C60920;
+     margin-top: 10px;
+     padding: 5px 5px;
+ }
+ h1{
+   font-family: great_vibesregular;
+   font-size: 40px;
+   color: #FFFFFF;
+   text-align: center;
+   margin: .40em 0;
+ }
+ button{
+     color: #FFFFFF;
+     background-color: #C60920;
+     border-style: none;
+     font-size: 17px;
+     font-family: Optima;
+     margin-top: 30px;
+     border-radius: 10px;
+     padding: 5px 10px;
+ }
+ .button {
+     color: #FFFFFF;
+     background-color: #C60920;
+     border-style: none;
+     font-size: 17px;
+     font-family: Optima;
+     border-radius: 10px;
+     padding: 5px 10px;
+ }
+ #img2{
+   margin-bottom: 20px;
+ }
+ .confirmation-msg {
+   background-color: #A8E0FC;
+   line-height: 1.5;
+   padding: 3em;
+   font-size: 14px;
+   margin-top: 20px;
+   margin-bottom: 20px;
+ }
+.multi_bg {
+background-image: url("../images/snowflake.svg");
+background-repeat: no-repeat, no-repeat, no-repeat;
+background-position: bottom right, left, right;
+}
+/*--------end submit----------*/
 
 /* ==========================================================================
    Helper classes
