@@ -1054,13 +1054,19 @@ textarea {
     background-repeat: no-repeat;
     background-size: 100%;
     position: absolute;
+    top: 0;
+  }
+  @media screen and (max-width: 767px) {
+    .product-item {
+       padding-top: 60px;
+     }
   }
   h3{
     margin-top: 47px;
     color: #03323A;
     font-weight: normal;
     font-size: 14px;
-    margin-left: 35px;
+    text-align: center;
     font-family: Optima;
   }
 
