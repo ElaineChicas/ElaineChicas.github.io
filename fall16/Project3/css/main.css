@@ -1063,7 +1063,7 @@ textarea {
   }
   h3{
     margin-top: 47px;
-    color: #03323A;
+    color: #289E5D;
     font-weight: normal;
     font-size: 14px;
     text-align: center;
@@ -1075,7 +1075,7 @@ textarea {
      background-color: #51B4E5;
      color: #FFFFFF;
      padding: 20px;
-     font-size: 14px;
+     font-size: 18px;
      font-weight: normal;
      font-family: Optima;
      line-height: 180%;
@@ -1117,7 +1117,7 @@ textarea {
    #name, #last, #email, #birthday{
        width:230px;
        height: 20px;
-       color: black;
+       color: #289E5D;
        font-family: Optima;
        border-style: none;
        margin: 10px 20px;
