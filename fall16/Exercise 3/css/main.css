@@ -1,8 +1,8 @@
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
 
 *, *:before, *:after {
-    -webkit-box-sizing: border-box; 
-    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -283,7 +283,7 @@ textarea {
 .offset-xs-11 {
   margin-left: 91.666667%;
 }
-/* breakpoint @ 544px */ 
+/* breakpoint @ 544px */
 @media (min-width: 34em) {
   .col-sm-1 {
     float: left;
@@ -448,7 +448,7 @@ textarea {
     margin-left: 91.666667%;
   }
 }
-/* breakpoint @ 768px */ 
+/* breakpoint @ 768px */
 @media (min-width: 48em) {
   .col-md-1 {
     float: left;
@@ -947,9 +947,15 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
-
-
+p{
+  font-size: 14px;
+  min-height: 100px;
+}
+@media screen and (max-width: 767px) {
+  p{
+     font-size: 20px;
+   }
+}
 
 
 
