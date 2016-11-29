@@ -955,7 +955,6 @@ textarea {
             url('../fonts/greatvibes/greatvibes-regular-webfont.woff') format('woff');
        font-weight: normal;
        font-style: normal;
-
    }
    #wrapper{
    	max-width:1280px;
@@ -964,7 +963,7 @@ textarea {
     position: relative;
    }
    body{
-       background-color: #BFECF7;
+    background-color: #BFECF7;
    }
    #logo{
     display: block;
@@ -1044,6 +1043,12 @@ textarea {
      font-size: 14px;
      margin-top: 20px;
    }
+   .multi_bg {
+   background-image: url("../images/snowflake.svg"), url("../images/snowflake.svg"), url("../images/snowflake.svg"), url("../images/snowflake.svg");
+   background-repeat: no-repeat, no-repeat, no-repeat;
+   background-position: 35% 45%, 53% 45%, 70% 50%, 95% 30%;
+   background-size: 6%, 10%, 6%, 10%;
+   }
   /*--------end (applies to all pages)-------*/
 
   /*--------start index----------*/
@@ -1058,17 +1063,24 @@ textarea {
   }
   @media screen and (max-width: 767px) {
     .product-item {
-       padding-top: 60px;
+       padding-top: 70px;
+     }
+  }
+  @media screen and (min-width: 767px) {
+    .product-item {
+       padding-top: 65px;
      }
   }
   h3{
     margin-top: 47px;
     color: #289E5D;
     font-weight: normal;
-    font-size: 14px;
-    text-align: center;
+    font-size: 13px;
+    margin-left: 40px;
     font-family: Optima;
   }
+
+  /*--------end index----------*/
 
    /*--------start form----------*/
    h2{
@@ -1099,6 +1111,12 @@ textarea {
     margin-bottom: 20px;
     padding-bottom: 30px;
    }
+   @media screen and (max-width: 768px) {
+     #img7{
+       float: right;
+     }
+   }
+
    .leftform{
        border-style: none;
        font-size: 14px;
@@ -1114,6 +1132,7 @@ textarea {
        width: 100px;
        padding-left: 30px;
    }
+
    #name, #last, #email, #birthday{
        width:230px;
        height: 20px;
@@ -1210,11 +1229,7 @@ textarea {
    margin-top: 20px;
    margin-bottom: 20px;
  }
-.multi_bg {
-background-image: url("../images/snowflake.svg");
-background-repeat: no-repeat, no-repeat, no-repeat;
-background-position: bottom right, left, right;
-}
+
 /*--------end submit----------*/
 
 /* ==========================================================================
